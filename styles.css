@@ -12,7 +12,7 @@ body{
 }
 
 .navbar {
-    background-color:antiquewhite;
+    background-color:rgba(10, 35, 66, 0.35);
     padding: 15px 30px;
     display: flex;
     justify-content: center;
@@ -30,9 +30,10 @@ body{
 
 .home-section {
     text-align: center;
-    background-color: #e0f7fa;
     height:500px;
-    background-image:url(./assets/backgroundsafari.png);
+    color:#ffffff;
+    text-shadow:  0 2px 4px rgba(0, 0, 0, 0.6);
+    background-image:url(./assets/1234.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,20 +43,72 @@ body{
     margin-bottom: 30px;
 }
 .home-section p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 .btn{
-    background-color:#0d8ea5;
+    background-color:#0A2342;
+    color:#ffffff;
+    border:none;
     padding:5px 30px;
 }
 
+.btn:hover{
+    background-color:#007BFF;
+    cursor:pointer;
+    transform:scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 
 
-/*Why choose us section*/
-.container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
+/*Future Tours*/
+.featured-tours {
+    padding: 50px 20px;
+    background-color: #ffffff;
     text-align: center;
+}
+
+.featured-tours h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+
+.container{
+    display:flex;
+    justify-content:flex-start;
+    gap:20px;
+    padding:10px;
+}
+
+.item{
+    background-color:none;
+    color:#333;
+    border-radius: 5px;
+    text-align:center;
+    gap:10px;
+}
+
+.item img{
+    width:300px;
+    height:200px;
+    border-radius:5px;
+}
+
+.item h2{
+    font-size:24px;
+    margin:10px 0;
+    text-shadow:  0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.item p{
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.item:hover{
+    transform:scale(1.05);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
