@@ -27,7 +27,7 @@ body{
     color: #333;
     text-decoration: none;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
 }
 .navbar a:hover {
     color: #007BFF;
@@ -110,3 +110,55 @@ body{
     font-size: 15px;
 }
 
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.see-more-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #0A2342;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.see-more-btn:hover {
+    background-color: #007BFF;
+}
+
+.international-destinations {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.international-destinations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.text-corner h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text-corner p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
