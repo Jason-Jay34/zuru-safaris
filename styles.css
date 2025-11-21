@@ -8,58 +8,42 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    
+    padding-top: 80px; /* prevent home-section from hiding under navbar */
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    z-index: 1000;
-    background-color:antiquewhite;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-.navbar a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
-}
-.navbar a:hover {
-    color: #007BFF;
-}
-
-.navbar a.active {
-    font-weight: 700;
-}
-
+/* HOME SECTION */
 .home-section {
     text-align: center;
-    height:500px;
-    color:#ffffff;
-    text-shadow:  0 2px 4px rgba(0, 0, 0, 0.6);
-    background-image:url(./assets/1234.jpg);
+    height: 500px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    background-image: url(./assets/1234.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
+
 .home-section h1 {
     font-size: 48px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
+
 .home-section p {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
+
 .btn{
     background-color:#0A2342;
     color:#ffffff;
     border:none;
-    padding:5px 30px;
+    padding:10px 25px;
+    margin: 5px;
 }
 
 .btn:hover{
@@ -69,27 +53,11 @@ body{
     transition: all 0.3s ease-in-out;
 }
 
-
-/*Future Tours*/
-.featured-tours {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.featured-tours h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: 600;
-}
-
-.destination{
-    color:#e78f22;
-}
-
+/* ITEMS */
 .item {
     text-align: center;
     transition: all 0.3s ease-in-out;
+    padding-bottom: 15px;
 }
 
 .item:hover {
@@ -100,58 +68,23 @@ body{
     border-radius: 8px;
 }
 
+.item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
 .item h2 {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
 .item p {
     font-size: 15px;
 }
 
-.item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.items-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.see-more-btn {
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #0A2342;
-    color: #ffffff;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-.see-more-btn:hover {
-    background-color: #007BFF;
-}
-
-.international-destinations {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.international-destinations h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: 600;
-}
-.destination-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
+/* SECTION TITLES */
 .text-corner h1{
     text-align: center;
     margin-top: 10px;
@@ -161,4 +94,58 @@ body{
     text-align: center;
     margin-top: 10px;
     font-size: 18px;
+}
+
+.destination{
+    color:#e78f22;
+}
+
+/* ------------------------------
+   🔥 RESPONSIVENESS FIXES BELOW
+--------------------------------*/
+@media (max-width: 992px) {
+    .home-section h1 {
+        font-size: 36px;
+    }
+    .home-section p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-section {
+        height: auto;
+        padding: 50px 15px;
+    }
+
+    .home-section h1 {
+        font-size: 28px;
+    }
+
+    .home-section p {
+        font-size: 16px;
+    }
+
+    .btn{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .item img {
+        height: 170px;
+    }
+
+    .item h2 {
+        font-size: 18px;
+    }
+
+    .item p {
+        font-size: 14px;
+    }
+
+    .text-corner h1 {
+        font-size: 26px;
+    }
 }
