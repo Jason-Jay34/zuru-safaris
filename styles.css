@@ -84,6 +84,11 @@ body{
     font-size: 15px;
 }
 
+.recommende-packages{
+    text-align: center;
+    margin: 30px 0;
+}
+
 /* SECTION TITLES */
 .text-corner h1{
     text-align: center;
