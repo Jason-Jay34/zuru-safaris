@@ -104,11 +104,28 @@ body{
 .destination{
     color:#e78f22;
 }
+.bottom{
+    background-color:#000000;
+    color:#ffffff;
+    text-align: center;
+    padding:10px;
+
+}
+
+.boxe{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+}
 
 .footer{
     padding:5px;
     text-align: center;
 }
+
+
 /* ------------------------------
    🔥 RESPONSIVENESS FIXES BELOW
 --------------------------------*/
@@ -130,7 +147,7 @@ body{
     .home-section h1 {
         font-size: 28px;
     }
-    
+
     .home-section p {
         font-size: 16px;
     }
