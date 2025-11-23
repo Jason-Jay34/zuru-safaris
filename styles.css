@@ -104,7 +104,15 @@ body{
 .destination{
     color:#e78f22;
 }
+.bottom{
+    background-color:#000000;
+    color:#ffffff;
+}
 
+.footer{
+    padding:5px;
+    text-align: center;
+}
 /* ------------------------------
    🔥 RESPONSIVENESS FIXES BELOW
 --------------------------------*/
