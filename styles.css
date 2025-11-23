@@ -107,12 +107,25 @@ body{
 .bottom{
     background-color:#000000;
     color:#ffffff;
+    text-align: center;
+    padding:10px;
+
+}
+
+.boxe{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
 }
 
 .footer{
     padding:5px;
     text-align: center;
 }
+
+
 /* ------------------------------
    🔥 RESPONSIVENESS FIXES BELOW
 --------------------------------*/
