@@ -23,11 +23,11 @@ It is ideal for beginners learning how to structure web pages and apply CSS styl
 
 ## Project Structure
 
-zuru-safaris/
-│
-├── index.html
-├── styles.css
-└── images/
+- zuru-safaris/
+  - index.html
+  - styles.css
+  - images/
+
 
 
 ## How to View the Project
