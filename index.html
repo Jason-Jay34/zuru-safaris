@@ -13,9 +13,8 @@
 </head>
 <body>
     
-</body>
-</html>
-<body>
+
+
 <!-- Responsive Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
     <div class="container">
@@ -29,7 +28,7 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto gap-lg-4">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Safari Packages</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Themed Holidays</a></li>
@@ -41,13 +40,25 @@
     </div>
 </nav>
 
-  <!--Home Section-->
-    <div class="home-section">
-        <h1>Discover Your Next Destination</h1>
-     <p>Explore breathtaking destination and create unforgettable memories with our curated travel experience</p>
-     <button class="btn"><i class="bi bi-geo-alt"></i>Explore Tours</button>
-     <button class="btn"><i class="bi bi-search"></i>View Destination</button>
+  <!-- Home Page Slideshow Hero -->
+<section class="slideshow-hero">
+
+    <div class="slideshow-container">
+        <div class="slide" style="background-image: url('./assets/slide1.jpg');"></div>
+        <div class="slide" style="background-image: url('./assets/slide2.jpg');"></div>
+        <div class="slide" style="background-image: url('./assets/slide3.jpg');"></div>
+        <div class="slide" style="background-image: url('./assets/slide4.jpg');"></div>
     </div>
+
+    <div class="slideshow-overlay"></div>
+
+    <div class="slideshow-content text-center">
+        <h1 class="fw-bold text-white display-4">Welcome to Zuru Safaris</h1>
+        <p class="text-white-50 lead">Adventure Awaits – Discover Your Next Destination</p>
+        <a href="packages.html" class="btn btn-primary btn-lg mt-3">Explore Packages</a>
+    </div>
+
+</section>
 
 
     <!--Featured Tours-->

@@ -10,38 +10,138 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Zuru Safaris</a>
 
-    <!--ITEM 1-->
-    <div class="destination-page">
-    <div class="iteme">
-        <img src="./assets/Mombasa.jpg" alt="Mombasa">
-        <h2>Mombasa 3 Days Package 2025</h2>
-        <p>“Join us on a 3-day/5-day Mombasa package and explore pristine beaches, historic sites, and thrilling safari experiences.”
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-           “Mombasa is more than a destination – it’s a journey through rich culture, breathtaking landscapes, and unforgettable adventures.”</p>
-           <button>Kshs.25,000</button>
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-lg-4">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Safari Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Themed Holidays</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Corporates</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Local Packages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Header Section -->
+  <section class="header-hero text-center d-flex align-items-center justify-content-center">
+    <div class="bg-overlay"></div>
+    <div class="content position-relative">
+        <h1 class="fw-bold text-white">Explore Our 2025 Destination Packages</h1>
+        <p class="text-white-50">Choose your next adventure from our curated list of breathtaking destinations.</p>
+    </div>
+</section>
+
+    <!-- Destination Grid -->
+    <div class="container py-4">
+        <div class="row g-4">
+
+            <!-- Item 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <img src="./assets/Mombasa.jpg" class="card-img-top" alt="Mombasa">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Mombasa 3 Days Package 2025</h5>
+                        <p class="card-text text-muted">
+                            Explore pristine beaches, rich culture, and unforgettable coastal experiences.
+                        </p>
+                        <button class="btn btn-primary w-100">Kshs. 25,000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <img src="./assets/Amboseli.jpg" class="card-img-top" alt="Amboseli">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Amboseli 3 Days Package 2025</h5>
+                        <p class="card-text text-muted">
+                            Discover Amboseli’s breathtaking wildlife and stunning landscapes.
+                        </p>
+                        <button class="btn btn-primary w-100">Kshs. 35,000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <img src="./assets/nakuru.jpg" class="card-img-top" alt="Lake Nakuru">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Lake Nakuru 3 Days Package 2025</h5>
+                        <p class="card-text text-muted">
+                            Experience stunning scenery and diverse wildlife around Lake Nakuru.
+                        </p>
+                        <button class="btn btn-primary w-100">Kshs. 30,000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <img src="./assets/malindi.jpg" class="card-img-top" alt="Malindi">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Malindi 3 Days Package 2025</h5>
+                        <p class="card-text text-muted">
+                            Enjoy Malindi’s tropical beaches, adventure scenes, and rich culture.
+                        </p>
+                        <button class="btn btn-primary w-100">Kshs. 28,000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 (New) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <img src="./assets/dubai.jpg" class="card-img-top" alt="Destination 5">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Dubai 5 Days Package 2025</h5>
+                        <p class="card-text text-muted">
+                             Discover Dubai’s stunning skyscrapers, desert adventures, luxury shopping, and world-class attractions.
+                        </p>
+                        <button class="btn btn-primary w-100">Kshs.85,000</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 (New) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm border-0">
+                    <img src="./assets/Diani.jpg" class="card-img-top" alt="Destination 6">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Diani 3 Days Package 2025</h5>
+                        <p class="card-text text-muted">
+                             Experience the white sandy beaches of Diani, crystal-clear waters, and exciting water activities
+                        </p>
+                        <button class="btn btn-primary w-100">Kshs.32,000</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-    <!--ITEM 2-->
-    <div>
-        <img src="./assets/Amboseli.jpg" alt="Amboseli">
-        <h2>Amboseli 3 Days Package 2025</h2>
-        <p>“Experience the vibrant city life and stunning wildlife of Amboseli with our exclusive 3-day/5-day package.”
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2024 Zuru Safaris. All rights reserved.</p>
+    </footer>
 
-           “Discover Amboseli’s unique blend of urban excitement and natural beauty, making it a must-visit destination for every traveler.”</p>
-           <button>Kshs.35,000</button>
-    </div>
-
-
-    <!--ITEM 2-->
-    <div>
-        <img src="./assets/nakuru.jpg" alt="Lake Nakuru">
-        <h2>Lake Nakuru 3 Days Package 2025</h2>
-        <p>“Immerse yourself in the breathtaking beauty of Lake Nakuru with our specially curated 3-day/5-day package.”
-
-           “Lake Nakuru offers a unique blend of stunning landscapes and diverse wildlife, making it an unforgettable destination for nature lovers.”</p>
-           <button>Kshs.30,000</button> 
-    </div>
-    </div>
 </body>
+
+
 </html>
