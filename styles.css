@@ -140,7 +140,7 @@ body{
 }
 
 .header-hero {
-    background: url('./assets/destibg.jpeg') no-repeat center center/cover;
+    background: url('./assets/slide1.jpg') no-repeat center center/cover;
     height: 60vh;
     position: relative;
 }
